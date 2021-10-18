@@ -1,0 +1,62 @@
+body header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+body ul#main-nav{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+body ul#main-nav li + li{
+    padding-left: 1rem;
+}
+
+body header a#login{
+    margin-left: auto;
+}
+
+body section#main{
+    display: flex;
+    flex-direction: row;
+}
+
+body main{
+    display: inline-block;
+    width: 70%;
+    overflow: hidden;
+}
+
+main section#articles{
+    display: flex;
+    flex-direction: row;
+}
+
+main  section#articles article{
+    width: 50%;
+}
+
+body main img{
+    width: 30%;
+}
+
+body  aside{
+    display: inline-block;
+    width: 20%;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+body div#buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 992px)
+{
+    body div#buttons{
+        flex-direction: row;
+    }
+}
